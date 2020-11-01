@@ -1,0 +1,43 @@
+<!-- <div class="container-flud">
+    <form #userForm="ngForm" class="white" (ngSubmit)="onSubmit()" novalidate="">
+        <div *ngFor="let c of cart">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" required #name  name="productID{{c.count}}" class="form-control" [(ngModel)]="c.productID">
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" name="productType{{c.count}}" class="form-control" [(ngModel)]="c.productType">
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+        <button class="btn btn-primary" (click)="add()" type="button">Add Me</button>
+    </form>
+</div> -->
+<!-- 
+<div class="container-flud white">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate="">
+    <div *ngFor="let c of cart" class="container">
+        <p>{{c.productType}}</p>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" required #name  name="productID{{c.count}}" class="form-control" [(ngModel)]="c.productID">
+        </div>
+    </div>
+  </form>
+</div> -->
+<div class="f1logoBar row">
+    <img src="../assets/f1logo.svg" height="50" width="80" />
+    <p class="text-right close-icon-blue"> 
+        <img src="../assets/close-icon-blue.svg" routerLink="" height="10" width="20">
+    </p>
+</div>
+<div class="row card container pureWhite">
+    <div class=" row" style="height:100%">
+        <img src="../assets/right-arrow.png" class="thankYou" height="45" width="35">
+    </div>
+    <p style="margin:auto"  class="lowFont1"> 
+        Thanks For the </p>
+    <p style="margin:auto" class="lowFont1">confirmation. We have sent payment to</p>
+    <p style="margin:auto"><b>aishwarya.193@gmail.com</b></p>
+</div>

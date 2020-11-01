@@ -1,0 +1,181 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	/*padding-left: 4%;*/
+}
+body {
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+}
+.main-row {
+	height: 640px;
+}
+.billing {
+	font-size: 12px;
+    padding: 2%;
+    /*margin-right: 5%;*/
+}
+.body {
+  background-image: url('/assets/girl.jpg');
+  
+  /*background-attachment: fixed;
+  */
+  background-attachment: fixed;
+  width: 100%;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-size: cover;
+  /*width: 100%;*/
+  
+}
+.class-title
+{
+	font-size: 20px;
+	padding-top: 2.5%;
+	padding-left: 2.5%; 
+}
+.footer {
+	position: fixed;
+    left: 15px;
+    bottom: 0;
+    width: 100%;
+    /*padding-bottom: 4%;*/
+}
+.f1logo
+{
+	/*background-image: url('/assets/f1logo.svg');*/
+	
+}
+.close-icon-blue {
+	    padding-top: 5%;
+    /* right: 2%; */
+    /* position: fixed; */
+    /* padding-right: 28%; */
+    padding-left: 60%;
+}
+.f1logoBar  {
+	background: #f8f9fa;
+    padding-left: 4%;
+    margin-left: 0px;
+    margin: 0;
+}
+.main-col
+{
+	background: #e9ecef61;
+}
+.menu-bar
+{
+	/*padding: 2%;*/
+	color: #fff;
+	padding: 1%;
+	list-style: none;
+	display: block;
+	background: #dee2e6;;
+}
+.menu-bar a {
+	padding: 3%;
+}
+.menu-bar p {
+	margin-bottom: 1px !important;
+}
+.menu-bar .title
+{
+	font-size: 11px;
+	color: #000;
+	line-height: 1 !important;
+}
+.step {
+	color: #000;
+	border-radius: 50px;
+	border: 1px solid;
+	margin-left: 40%;
+	margin-top: 10%;
+	margin-right: 33%;
+}
+
+.nav-item {
+	padding-left:  0px;
+	padding-right: 0px;
+}
+li {
+
+}
+.white {
+	background: #dee2e6 !important;
+}
+.no-margin {
+	margin-bottom: 0px !important;
+}
+.active {
+	/*background-color: #6c757d;*/
+}
+
+.grey {
+	background-color : #f8f9fa !important
+}
+.product {
+	padding-top: 5% !important;
+	padding-bottom: 5%  !important;
+}
+.highIndex{
+	z-index: 10000;
+}
+
+.lowIndex {
+	z-index: -9999999;
+}
+.pureWhite {
+	background-color: #fff;
+}
+.orderSummary {
+
+}
+.navLi {
+	color: #000;
+}
+.lowFont {
+	font-size: 12px;
+}
+.lowFont1 {
+	font-size: 10px;
+}
+.no-padding
+{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+.title {
+	font-weight: 100;
+}
+#orderSummary{
+	padding-top: 5%;
+}
+.green {
+	background-color: #17a2b899;
+}
+.payment {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.payment .title {
+	margin-bottom: 5%;
+	font-weight: 500;
+
+}
+.card {
+	
+}
+.smallFont {
+	font-size: 13px;
+
+}
+.Total {
+	font-size: 15px;
+}

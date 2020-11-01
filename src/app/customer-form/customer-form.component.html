@@ -1,0 +1,72 @@
+<div class="f1logoBar row">
+	<img src="../assets/f1logo.svg" height="50" width="80" />
+	<p class="text-right close-icon-blue"> 
+		<img src="../assets/close-icon-blue.svg" routerLink=""  height="10" width="20">
+	</p>
+</div>
+<div class="row" style="width: 100%">
+	<ul ngbNav #nav="ngbNav" class="row nav-tabs" style="width: 100%">
+	  <li ngbNavItem class="col-4 li white menu-bar" routerLink="/product">
+	  	<p class="text-center no-margin"><img src="../assets/product.svg" height="30" width="20"></p>
+	  	<p class="title text-center no-margin">Product details</p>
+        <p class="text-center circle step no-margin ">1</p>
+	  </li>
+	  <li ngbNavItem class="col-4 menu-bar" routerLink="/customer-detail">
+	  	<p class="text-center no-margin"><img src="../assets/contact-information.svg" height="30" width="20"></p>
+        <p class="title text-center no-margin">Customer details</p>
+        <p class="text-center circle step no-margin active">2</p>
+	  </li>
+	  	<li ngbNavItem class="col-4 menu-bar" routerLink="/payment">
+		    <p class="text-center no-margin"><img src="../assets/credit-card.svg" height="30" width="20"></p>
+	        <p class="title text-center no-margin">Payment details</p>
+	        <p class="text-center circle step no-margin">3</p>
+	  	</li>
+	</ul>
+</div>
+<div [ngbNavOutlet]="nav"></div>
+<div class="container pureWhite" style="padding-top: 5%">
+	<form class="form-group w3-container pureWhite" #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate="">
+		<div class="form-group row">
+            <label class="lowFont">Name *</label>
+            <input type="text" required #name  name="" class="form-control w3-input"  placeholder="Name">
+        </div>
+        <div class="form-group row">
+            <label class="lowFont">Email ID *</label>
+            <input type="text" required #name  name="" class="form-control w3-input"  placeholder="Email Id">
+        </div>
+        <div class="form-group row">
+            <label class="lowFont">Phone Number *</label>
+            <input type="text" required #name  name="" class="form-control w3-input"  placeholder="Phone Number">
+        </div>
+        <div class="form-group row">
+            <label class="lowFont">PAN or AADHAR *</label>
+            <input type="text" required #name  name="" class="form-control w3-input"  placeholder="PAN or AADHAR">
+        </div>
+        <h5>Address Details</h5>
+        <div ngModelGroup>
+        	<div class="form-group row">
+	            <label class="lowFont">Address *</label>
+	            <input type="text" required #name  name="" class="form-control w3-input"  placeholder="Address">
+	        </div>
+	        <div class="form-group row">
+	            <label class="lowFont">City *</label>
+	            <input type="text" required #name  name="" class="form-control w3-input"  placeholder="City">
+	        </div>
+	        <div class="form-group row">
+	            <label class="lowFont">Pincode *</label>
+	            <input type="text" required #name  name="" class="form-control w3-input"  placeholder="Pincode">
+	        </div>
+        </div>
+        <hr />
+		<div class="row">
+			<h6 class="col-6">Grand Total</h6>
+			<div class="col-6 text-right">
+				<label>19,655</label>
+			</div>
+		</div>
+        <div class="row btn btn-primary" style="margin-bottom: 5%" type="button" routerLink="/payment">Submit & Go to Payment Info</div>
+	</form>
+	<hr/>
+	
+</div>
+
